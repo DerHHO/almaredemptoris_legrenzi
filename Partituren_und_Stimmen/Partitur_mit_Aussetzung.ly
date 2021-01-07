@@ -21,7 +21,7 @@ tempTranspose = #(define-music-function (parser location music)
                           (note (or (ly:get-option 'note) 0))
                           (alteration (or (ly:get-option 'alteration) 0))
                           (to (ly:make-pitch octave note alteration)))
-                     #{ \transpose c c  $music #})) 
+                     #{ \transpose c c  $music #}))
 
 
 
@@ -51,16 +51,16 @@ print-all-headers = ##f
     tagline = \schlusszeile
     instrument = "Partitur (C)"
   }
-  
-  
+
+
   \score {
-    
-    \removeWithTag #'transponierendepartitur 
+
+    \removeWithTag #'transponierendepartitur
     \removeWithTag #'klavierauszug
     \removeWithTag #'direction
     \removeWithTag #'einzelstimme
     \scoreAlmaLegrenziMitAussetzung
-    
+
     \layout {
       \context {
         \Staff
@@ -68,7 +68,9 @@ print-all-headers = ##f
       }
     }
   }
-    
-  
-  
+  \markup {
+    \fill-line { \übersetzungMarkup }
+  }
+
+
 }

@@ -24,7 +24,7 @@ tempTranspose = #(define-music-function (parser location music)
                           (note (or (ly:get-option 'note) 0))
                           (alteration (or (ly:get-option 'alteration) 0))
                           (to (ly:make-pitch octave note alteration)))
-                     #{ \transpose c c  $music #})) 
+                     #{ \transpose c c  $music #}))
 
 
 
@@ -49,22 +49,25 @@ tempTranspose = #(define-music-function (parser location music)
   \header {
     instrument = "Chorpartitur"
   }
-  
 
-\score {
-  \header {
-    
+
+  \score {
+    \header {
+
+    }
+    \removeWithTag #'transponierendepartitur
+    \removeWithTag #'partitur
+    \removeWithTag #'einzelstimme
+    \removeWithTag #'klavierauszug
+    \removeWithTag #'midiausgabe
+    \optionalTranspose {
+      \compressFullBarRests
+      \transpose c c \chorpartiturAlmaLegrenzi
+    }
   }
-  \removeWithTag #'transponierendepartitur
-  \removeWithTag #'partitur
-  \removeWithTag #'einzelstimme
-  \removeWithTag #'klavierauszug
-  \removeWithTag #'midiausgabe
-  \optionalTranspose { 
-    \compressFullBarRests
-    \transpose c c \chorpartiturAlmaLegrenzi 
+  \markup {
+    \fill-line { \übersetzungMarkup }
   }
-}
   \paper {  
     
     ragged-right = ##f
@@ -75,6 +78,7 @@ two-sided = ##f
 inner-margin = 1\cm
 outer-margin = 1\cm
 first-page-number = 1
+bookTitleMarkup = \bookTitleMarkupQR
 #(include-special-characters)
 
 	

@@ -75,6 +75,7 @@ tempTranspose = #(define-music-function (parser location music)
 right-margin = 1.3\cm
 first-page-number = 2
 indent = 0\cm
+bookTitleMarkup = \bookTitleMarkupQR
 #(include-special-characters)
 #(define page-breaking ly:page-turn-breaking)
 

@@ -127,10 +127,10 @@ sopranTextAlmaLegrenzi = \lyricmode {
   Ga -- bri -- e -- lis ab o -- re -- su -- mens il -- lud a -- ve,
   pec -- ca -- to -- rum mi -- se -- re -- re,
   mi -- se -- re -- re, mi -- se -- re -- re,
-  vir -- go pri -- us ac pos -- te -- ri -- us, 
+  vir -- go pri -- us ac pos -- te -- ri -- us,
   Ga -- bri -- e -- lis ab o -- re -- su -- mens il -- lud a -- ve,
   pe -- ca -- to -- rum  mi -- se -- re -- re,
-  mi -- se -- re -- re, 
+  mi -- se -- re -- re,
   mi -- se -- re -- re,
   su -- mens il -- lud a -- ve,
   pec -- ca -- to -- rum mi -- se -- re -- re,
@@ -269,13 +269,27 @@ orgelLHNotenAlmaLegrenzi = \tempTranspose \relative c {
 
 }
 
+übersetzungMarkup = \markup {
+  \center-column {
+    \line { Erhabne Mutter des Erlösers, }
+    \line { du allzeit offene Pforte des Himmels }
+    \line { und Stern des Meeres, }
+    \line { komm, hilf deinem Volke, }
+    \line { das sich müht, vom Falle aufzustehn. }
+    \line { Du hast geboren, der Natur zum Staunen, }
+    \line { deinen heiligen Schöpfer. }
+    \line { die du, Jungfrau davor und danach, }
+    \line { aus Gabriels Mund vernahmst das selige Ave, }
+    \line { o erbarme dich der Sünder. }
+  }
+}
 
 
 metronomZeileAlmaLegrenzi = \drummode {
 }
 \include "defAlmaLegrenzi.ly"
 
-%{Arbeitspartitur
+%***Arbeitspartitur
 #(set-global-staff-size 17)
 \book {
   \bookOutputName "AlmaLegrenzi-Arbeitspartitur"
@@ -313,4 +327,4 @@ metronomZeileAlmaLegrenzi = \drummode {
     \scoreAlmaLegrenzi
   }
 }
-Arbeitspartitur%}
+%Arbeitspartitur***

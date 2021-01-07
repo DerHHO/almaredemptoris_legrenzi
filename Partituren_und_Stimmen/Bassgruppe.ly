@@ -60,6 +60,7 @@ inner-margin = 1.3\cm
 outer-margin = 1\cm
 first-page-number = 2
 indent = 0\cm
+bookTitleMarkup = \bookTitleMarkupQR
 #(include-special-characters)
 #(define page-breaking ly:page-turn-breaking)
 
