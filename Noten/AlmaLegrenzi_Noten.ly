@@ -17,8 +17,8 @@ tempTranspose = #(define-music-function (parser location music)
                           (to (ly:make-pitch octave note alteration)))
                      #{ \transpose c c  $music #}))
 
-mBreak = {  }
-mPageBreak = { }
+mBreak = { \break }
+mPageBreak = { \pageBreak }
 
 
 globalAlmaLegrenzi = {
@@ -234,29 +234,125 @@ continuoNotenAlmaLegrenzi = \tempTranspose \relative c {
   d8 [ a8 ] e4 a4 a'8 [ g8 ] |
   f4 g4 e4 a4 |
   g4 e4 d4 b4 |
-  \mPageBreak c4 f4 g4. f8 e8 [ c8 ] g4 c8 [
-  c'8 ] b8 [ a8 ] gis4 a4 a4 gis4 a4 e4 f4. f8 \mBreak e4 c4 b4 e,4 a4
-  f'4 d4 e4 a,4 f'4 e4 d4 c4 f4 e4 d4 \mBreak c4 a4 d8 [ c8 ] bes8 [ a8
-  ] g4. f8 c'8 a8 bes8 [ c8 ] f4 d4 c4 bes4 a4 d4 c4 bes4 \mBreak a4 f4
-  bes'8 [ a8 ] g8 [ f8 ] e4. d8 a'8 f8 g8 [ a8 ] d,8 [ e8 ] d8 [ c8 ]
-  bes8 [ a8 ] g8 [ f8 ] c'4. c8 d8 [ c8 ] bes8 [ a8 ] \mPageBreak g4. f8
-  c'8 [ a8 ] bes8 [ c8 ] f,8 [ f'8 ] e8 [ d8 ] c8 [ d8 ] e8 [ f8 ] g8
-  [ a8 ] b8 [ g8 ] c8 [ c,8 ] e8 [ f8 ] g4 g,4 c4 a4 \mBreak f4 g4 c4 a4
-  g8 [ a8 ] bes8 [ c8 ] d8 c8 d8 [ d,8 ] g8 [ g'8 ] f8 [ e8 ] d8 [ e8
-  ] f8 [ g8 ] a8 [ b8 ] cis8 [ a8 ] d8 [ d,8 ] f8 [ g8 ] a4 a,4 d4 bes4
-  \mBreak g4 a4 d4 b4 a8 [ b8 ] c8 [ d8 ] e8 [ d8 ] e8 [ e,8 ] a4. f'8
-  g4. e8 f4. d8 e4. cis8 \mBreak d8 [ e8 ] f8 [ g8 ] a8 [ a8 ] a8 [ a8
-  ] d,4. c8 bes4. g8 a4 g4 a2 d4. b8 c4. a8 b4 b'8 [ a8 ] gis8 [ fis8
-  ] gis8 [ e8 ] \mPageBreak a8 [ b8 ] c8 [ d8 ] e8 [ e8 ] e8 [ e8 ] a,4.
-  g8 f4. d8 e4 d4 e4 e,4 a4 a'4 g4 g,4 f4 f'4 bes,4 f4 \mBreak bes4 c4
-  f,4 f'4 g4. e8 f4. c8 d4. e8 f4. e16 [ d16 ] cis8 [ b8 ] cis8 a8 d8
-  [ e8 ] f8 [ g8 ] \mBreak a8 [ a8 ] a8 [ a8 ] d,4. c8 bes4. g8 a4 g4 a8
-  [ g8 ] a4 d,4. d'8 c4 bes4 a8 [ a8 ] a8 [ a8 ] \mBreak d,4 d'8 [ c8 ]
-  bes4. g8 a4 g4 a8 g8 a4 d4 f,8 [ g8 ] a8 g8 a4 d1 \bar "|."
+  \mPageBreak 
+  c4 f4 g4. f8 |
+  e8 [ c8 ] g4 c8 [ c'8 ] b8 [ a8 ] |
+  gis4 a4 a4 gis4 |
+  a4 e4 f4. f8 | \mBreak
+  e4 c4 b4 e,4 | 
+  a4 f'4 d4 e4 |
+  a,4 f'4 e4 d4 |
+  c4 f4 e4 d4 | \mBreak 
+  c4 a4 d8 [ c8 ] bes8 [ a8 ] |
+  g4. f8 c'8 a8 bes8 [ c8 ] |
+  f4 d4 c4 bes4 |
+  a4 d4 c4 bes4 | \mBreak 
+  a4 f4 bes'8 [ a8 ] g8 [ f8 ] |
+  e4. d8 a'8 f8 g8 [ a8 ] |
+  d,8 [ e8 ] d8 [ c8 ] bes8 [ a8 ] g8 [ f8 ] |
+  c'4. c8 d8 [ c8 ] bes8 [ a8 ] | \mPageBreak 
+  g4. f8 c'8 [ a8 ] bes8 [ c8 ] |
+  f,8 [ f'8 ] e8 [ d8 ] c8 [ d8 ] e8 [ f8 ] |
+  g8 [ a8 ] b8 [ g8 ] c8 [ c,8 ] e8 [ f8 ] g4 g,4 c4 a4 | \mBreak 
+  f4 g4 c4 a4 |
+  g8 [ a8 ] bes8 [ c8 ] d8 c8 d8 [ d,8 ] |
+  g8 [ g'8 ] f8 [ e8 ] d8 [ e8 ] f8 [ g8 ] |
+  a8 [ b8 ] cis8 [ a8 ] d8 [ d,8 ] f8 [ g8 ] |
+  a4 a,4 d4 bes4 | \mBreak 
+  g4 a4 d4 b4 |
+  a8 [ b8 ] c8 [ d8 ] e8 [ d8 ] e8 [ e,8 ] |
+  a4. f'8 g4. e8 f4. d8 e4. cis8 |
+  \mBreak 
+  d8 [ e8 ] f8 [ g8 ] a8 [ a8 ] a8 [ a8 ] |
+  d,4. c8 bes4. g8 |
+  a4 g4 a2 |
+  d4. b8 c4. a8 |
+  b4 b'8 [ a8 ] gis8 [ fis8 ] gis8 [ e8 ] | \mPageBreak 
+  a8 [ b8 ] c8 [ d8 ] e8 [ e8 ] e8 [ e8 ] |
+  a,4. g8 f4. d8 |
+  e4 d4 e4 e,4 |
+  a4 a'4 g4 g,4 |
+  f4 f'4 bes,4 f4 | \mBreak
+  bes4 c4 f,4 f'4 |
+  g4. e8 f4. c8 |
+  d4. e8 f4. e16 [ d16 ] |
+  cis8 [ b8 ] cis8 a8 d8 [ e8 ] f8 [ g8 ] |
+  \mBreak 
+  a8 [ a8 ] a8 [ a8 ] d,4. c8 |
+  bes4. g8 a4 g4 a8 [ g8 ] a4 d,4. d'8 |
+  c4 bes4 a8 [ a8 ] a8 [ a8 ] |
+  \mBreak 
+  d,4 d'8 [ c8 ] bes4. g8 |
+  a4 g4 a8 g8 a4 |
+  d4 f,8 [ g8 ] a8 g8 a4 |
+  d1 \bar "|."
 }
 
 bezifferungAlmaLegrenzi = \figuremode {
-
+  \globalAlmaLegrenzi
+  s2. <[6 4]>8 <[_+]> |
+  s4 <[4-]>8 <[6 5]> <[_-]>4 <[6]>8 s8 |
+  s2. <6 [4]>8 <5 [_+]> |
+  s2 <6 5>4 <[_+]> |
+  s2 <7>4 <[6 4]>8. <[_+]>16 |
+  s4 s <[_+]> <6> |
+  s4 <[6 4]>8. <[_+]>16 s4 s |
+  <[_+]>4 <[6]> s4 s |
+  <_+>4 <[6]> s4 s |
+  s <4>8 <_+> s4 s |
+  <5> s s <5>8 <6\\> |
+  s4 <5>8 <6\\> s4 s |
+  s4 <5>8 <6> s2 |
+  <6>8 s <[4]>8 <[3]> s2 |
+  <[6]>4 s <2> <[6 5]> |
+  s4 <6 [4]>8 <5 _+> <7>4 <6> |
+  <_+> <[6]> <6\\> <_+> |
+  s4 s <5> <[_+]> |
+  s2 s4 <7>8 <6> |
+  s2 s4 <7>8 <6> |
+  s1 |
+  <_->4. <6>8 s8 <6> <6 5> s |
+  s4 s <6> <7>8 <6> |
+  <[_+]>4 s s s |
+  <_+>4 s s s |
+  s4 s <_+>8 <6> <5> s |
+  s1 |
+  <5>4 <6> s4 s |
+  <_->4. s8 s8 s8 <[6 5]> s8 |
+  s1 |
+  s4 <[6]> s4 <[6]>8 s8 |
+  <[6 4]>4 <[5 3]> s4 s |
+  <5>4 s4 s <5>8 <6\\> |
+  <_->4 <[6]> <4> <_+> |
+  <_->4 s s s |
+  <[_+]>4 <[6]> s4 <[6]> |
+  <4> <[_+]> s4 s4 |
+  <5> <[_+]> s4 <5>8 <6\\> |
+  s4 <[6]> <4> <_+> |
+  s4. s8 <4>4 <_->8 <[6 5]> |
+  <4>4 <3> <4> <_->8 <[6]> |
+  s4 <[6]> <[4]> <[_+]> |
+  s4. <[6]>8 <5>4 <6> |
+  <_+>4 s4 <4> <_+> |
+  <_!>4. s8 <4>4 <3> |
+  <[5+] 4>8 <3> s4 s <5>8 <[_+]> |
+  s4 <[6]> <[4]> <[_+]> |
+  s4. s8 <5>4 <6> |
+  <7 _+> <7> <4> <_+> |
+  s4 s <7-> <6> |
+  s4 s <6 5> <7> |
+  s4 s4 s s |
+  <4>8 <_->4 <[6 5]>8 <[4]>4 <[3]>8 <6> |
+  <7>8 <6->4 <[6 5]>8 <9>4 <8> |
+  <[6]>4 <[6] 5>8 <7 [_+]> s4 <[6]> |
+  <_+>2 s4. s8 |
+  <5>4 <6>8 <[6]> <7 _+>4 <7> |
+  <5 [4]> <_+> <5> <6-> |
+  <7>8 <6> <7> <6> <[_+]>2 |
+  s4 s <5> <6>8 <[6]> |
+  <7 _+>4 <7> <4>8 <3> <[_+]>4 |
+  s4 <6> <4>8 <3> <_+>4 |
+  s1
 }
 
 orgelRHNotenAlmaLegrenzi = \tempTranspose \relative c' {
@@ -290,7 +386,7 @@ metronomZeileAlmaLegrenzi = \drummode {
 \include "defAlmaLegrenzi.ly"
 
 %***Arbeitspartitur
-#(set-global-staff-size 17)
+#(set-global-staff-size 16)
 \book {
   \bookOutputName "AlmaLegrenzi-Arbeitspartitur"
   \score {
