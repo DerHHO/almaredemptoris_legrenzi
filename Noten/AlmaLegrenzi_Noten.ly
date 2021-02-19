@@ -17,8 +17,13 @@ tempTranspose = #(define-music-function (parser location music)
                           (to (ly:make-pitch octave note alteration)))
                      #{ \transpose c c  $music #}))
 
-mBreak = { \break }
-mPageBreak = { \pageBreak }
+mBreak = {
+  %\break
+}
+
+mPageBreak = { 
+  %\pageBreak 
+}
 
 
 globalAlmaLegrenzi = {
@@ -41,7 +46,7 @@ sopranNotenAlmaLegrenzi = \tempTranspose \relative a' {
   d4 r8 a'8 d8. d16 c8. b16 | % 6
   c8 a8 c8 d8 e4 e4 | % 7
   r2 r4 r8 a,8 | % 8
-  gis8([ a16 b16 ] c16 [ d16 c16 b16 ] a8 [ b16 c16 ] d8 [ c16 d16 ]
+  gis8([ a16 b16] c16 [d16 c16 b16] a8 [ b16 c16] d8 [ c16 d16]
   \mBreak | % 9
   b8 [ c16 d16 ] e16 [ f16 e16 d16 ] c8 [ d16 e16 ] f8 [ e16 f16 ] |
   \barNumberCheck #10
@@ -101,7 +106,7 @@ sopranNotenAlmaLegrenzi = \tempTranspose \relative a' {
 sopranTextAlmaLegrenzi = \lyricmode {
   Al -- ma Re -- dem -- pto -- ris Ma -- ter,
   Re -- dem -- pto -- ris Ma -- ter,
-  quæ per via cæ -- li -- or -- ta,
+  quæ per via cæ -- li or -- ta,
   por -- ta ma -- nes, et stel -- la ma -- ris,
   quæ per via cæ -- li -- or -- ta,
   por -- ta ma -- nes,
@@ -111,11 +116,13 @@ sopranTextAlmaLegrenzi = \lyricmode {
   sur -- ge -- re,
   sur -- ge -- re qui cu -- rat po -- pu -- lo,
   suc -- cur -- re ca -- den -- ti sur -- ge -- re,
-  sur -- ge -- re, sur -- ge -- re qui cur -- rat po -- pu -- lo,
+  sur -- ge -- re, sur -- ge -- re,
+  qui cur -- rat po -- pu -- lo,
   sur -- ge -- re, sur -- ge -- re,
   sur -- ge -- re, sur -- ge -- re,
   sur -- ge -- re,
-  sur -- ge -- re qui cur -- rat po -- pu -- lo.
+  sur -- ge -- re,
+  qui cur -- rat po -- pu -- lo.
   Tu, quæ ge -- nu -- i -- sti,
   na -- tu -- ra mi -- ran -- te,
   tu -- um sanc -- tum,
@@ -124,12 +131,14 @@ sopranTextAlmaLegrenzi = \lyricmode {
   na -- tu -- ra mi -- ran -- te,
   tu -- um sanc -- tum Ge -- ni -- to -- rem,
   vir -- go pri -- us ac pos -- te -- ri -- us,
-  Ga -- bri -- e -- lis ab o -- re -- su -- mens il -- lud a -- ve,
+  Ga -- bri -- e -- lis ab o -- re 
+  su -- mens il -- lud a -- ve,
   pec -- ca -- to -- rum mi -- se -- re -- re,
   mi -- se -- re -- re, mi -- se -- re -- re,
   vir -- go pri -- us ac pos -- te -- ri -- us,
-  Ga -- bri -- e -- lis ab o -- re -- su -- mens il -- lud a -- ve,
-  pe -- ca -- to -- rum  mi -- se -- re -- re,
+  Ga -- bri -- e -- lis ab o -- re
+  su -- mens il -- lud a -- ve,
+  pec -- ca -- to -- rum  mi -- se -- re -- re,
   mi -- se -- re -- re,
   mi -- se -- re -- re,
   su -- mens il -- lud a -- ve,
@@ -211,11 +220,37 @@ altTextAlmaLegrenzi = \lyricmode {
   por -- ta ma -- nes,
   et stel -- la ma -- ris.
   Al -- ma Re -- dem -- pto -- ris Ma -- ter,
-  Re -- dem -- pto -- ris Ma -- ter, suc -- cur -- re ca -- den -- ti sur -- ge -- re, sur -- ge -- re,
-  sur -- ge -- re qui cu -- rat po -- pu -- lo, suc -- cur -- re ca -- den -- ti sur -- ge -- re, sur -- ge -- re, sur -- ge -- re qui cur -- rat po -- pu -- lo, sur -- ge -- re, sur -- ge -- re, sur -- ge -- re, qui
-  cur -- rat po -- pu -- lo. Tu, quæ ge -- nu -- i -- sti, na -- tu -- ra mi -- ran -- te, tu -- um sanc -- tum Ge -- ni -- to -- rem, tu, quæ ge -- nu -- i -- ste, na -- tu -- ra mi -- ran -- te, tu -- um sanc -- tum, tu -- um sanc -- tum Ge -- ni -- to -- rem, vir -- go pri -- us ac pos -- te -- ri -- us,
-  Ga -- bri -- e -- lis ab o -- re -- su -- mens il -- lud a -- ve, pec -- ca -- to -- rum mi -- se -- re -- re, mi -- se -- re -- re, peca -- to -- rum mi -- s -- e -- re -- re, vir -- go
-  pri -- us ac pos -- te -- ri -- us, ac pos -- te -- ri -- us, Ga -- bri -- e -- lis ab o -- re -- su -- mens il -- lud a -- ve, peca -- to -- rum mi -- s -- e -- re -- re, mi -- se -- re -- re, su -- mens il -- lud a -- ve, pec -- ca -- to -- rum
+  Re -- dem -- pto -- ris Ma -- ter, 
+  suc -- cur -- re ca -- den -- ti sur -- ge -- re, 
+  sur -- ge -- re,
+  sur -- ge -- re qui cu -- rat po -- pu -- lo, 
+  suc -- cur -- re ca -- den -- ti sur -- ge -- re, 
+  sur -- ge -- re, 
+  sur -- ge -- re,
+  qui cur -- rat po -- pu -- lo, sur -- ge -- re, 
+  sur -- ge -- re, sur -- ge -- re,
+  qui cur -- rat po -- pu -- lo. 
+  Tu, quæ ge -- nu -- i -- sti, 
+  na -- tu -- ra mi -- ran -- te, 
+  tu -- um sanc -- tum Ge -- ni -- to -- rem, 
+  tu, quæ ge -- nu -- i -- ste, 
+  na -- tu -- ra mi -- ran -- te, 
+  tu -- um sanc -- tum, tu -- um sanc -- tum 
+  Ge -- ni -- to -- rem, 
+  vir -- go pri -- us ac pos -- te -- ri -- us,
+  Ga -- bri -- e -- lis ab o -- re 
+  su -- mens il -- lud a -- ve, 
+  pec -- ca -- to -- rum mi -- se -- re -- re, 
+  mi -- se -- re -- re, 
+  pec -- ca -- to -- rum mi -- se -- re -- re, 
+  vir -- go pri -- us ac pos -- te -- ri -- us, 
+  ac pos -- te -- ri -- us, 
+  Ga -- bri -- e -- lis ab o -- re 
+  su -- mens il -- lud a -- ve, 
+  pec -- ca -- to -- rum mi -- se -- re -- re, 
+  mi -- se -- re -- re, 
+  su -- mens il -- lud a -- ve, 
+  pec -- ca -- to -- rum
   mi -- se -- re -- re, mi -- se -- re -- re.
 }
 
@@ -385,7 +420,7 @@ metronomZeileAlmaLegrenzi = \drummode {
 }
 \include "defAlmaLegrenzi.ly"
 
-%***Arbeitspartitur
+%{Arbeitspartitur
 #(set-global-staff-size 16)
 \book {
   \bookOutputName "AlmaLegrenzi-Arbeitspartitur"
@@ -423,4 +458,4 @@ metronomZeileAlmaLegrenzi = \drummode {
     \scoreAlmaLegrenzi
   }
 }
-%Arbeitspartitur***
+Arbeitspartitur%}

@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-komponist = \markup { Giovanni Legrenzi }
+komponist = \markup { Giovanni Legrenzi (1626–1690) }
 widmung = \markup {  }
 arrangeur = \markup {  }
 untertitel = \markup {  }

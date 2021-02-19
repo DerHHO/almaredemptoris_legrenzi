@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.0"
 #(ly:set-option 'relative-includes #t)
 
 #(set! paper-alist (cons '("Marschbuch" . (cons (* 148.5 mm) (* 120 mm)) ) paper-alist))
@@ -60,7 +60,6 @@ inner-margin = 1.3\cm
 outer-margin = 1\cm
 first-page-number = 2
 indent = 0\cm
-bookTitleMarkup = \bookTitleMarkupQR
 #(include-special-characters)
 #(define page-breaking ly:page-turn-breaking)
 
@@ -91,7 +90,7 @@ bookTitleMarkup = \bookTitleMarkupQR
       %{<Emergency_Section>%}
 
 %{</Emergency_Section>%}
-      \compressFullBarRests
+      \compressEmptyMeasures
       \clef "bass"
       \optionalTranspose { \transpose c c \continuoNotenAlmaLegrenzi }
     }

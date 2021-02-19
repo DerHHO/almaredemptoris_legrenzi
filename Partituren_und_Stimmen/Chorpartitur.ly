@@ -3,7 +3,7 @@
 
 #(set! paper-alist (cons '("Marschbuch" . (cons (* 148.5 mm) (* 120 mm)) ) paper-alist))
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 14)
 #(set-default-paper-size "a4")
 
 \include "../Noten/AlmaLegrenzi_Noten.ly"
@@ -78,7 +78,6 @@ two-sided = ##f
 inner-margin = 1\cm
 outer-margin = 1\cm
 first-page-number = 1
-bookTitleMarkup = \bookTitleMarkupQR
 #(include-special-characters)
 
 	

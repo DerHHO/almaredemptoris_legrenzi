@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.12.0"
 #(ly:set-option 'relative-includes #t)
 #(set-default-paper-size "a4")
 #(set-global-staff-size 17)
@@ -49,7 +49,8 @@ print-all-headers = ##f
     poet = \herausgeber
     arranger = \arrangeur
     tagline = \schlusszeile
-    instrument = "Partitur (C)"
+    instrument = "Partitur mit Aussetzung"
+    copyright = \copyrightAlmaLegrenzi
   }
 
 
@@ -73,4 +74,4 @@ print-all-headers = ##f
   }
 
 
-}
+}´
