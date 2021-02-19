@@ -61,7 +61,7 @@ tempTranspose = #(define-music-function (parser location music)
     \removeWithTag #'klavierauszug
     \removeWithTag #'midiausgabe
     \optionalTranspose {
-      \compressFullBarRests
+      \compressEmptyMeasures
       \transpose c c \chorpartiturAlmaLegrenzi
     }
   }
