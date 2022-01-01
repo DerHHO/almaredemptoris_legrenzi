@@ -106,9 +106,9 @@ sopranNotenAlmaLegrenzi = \tempTranspose \relative a' {
 sopranTextAlmaLegrenzi = \lyricmode {
   Al -- ma Re -- dem -- pto -- ris Ma -- ter,
   Re -- dem -- pto -- ris Ma -- ter,
-  quæ per via cæ -- li or -- ta,
+  quæ per via cæ -- li por -- ta,
   por -- ta ma -- nes, et stel -- la ma -- ris,
-  quæ per via cæ -- li -- or -- ta,
+  quæ per via cæ -- li  por -- ta,
   por -- ta ma -- nes,
   et stel -- la ma -- ris.
   Al -- ma Re -- dem -- pto -- ris Ma -- ter,
@@ -135,7 +135,7 @@ sopranTextAlmaLegrenzi = \lyricmode {
   su -- mens il -- lud a -- ve,
   pec -- ca -- to -- rum mi -- se -- re -- re,
   mi -- se -- re -- re, mi -- se -- re -- re,
-  vir -- go pri -- us ac pos -- te -- ri -- us,
+  vir -- go pri -- us ac po -- ste -- ri -- us,
   Ga -- bri -- e -- lis ab o -- re
   su -- mens il -- lud a -- ve,
   pec -- ca -- to -- rum  mi -- se -- re -- re,
@@ -214,9 +214,9 @@ altNotenAlmaLegrenzi = \tempTranspose \relative a' {
 
 altTextAlmaLegrenzi = \lyricmode {
   Al -- ma Re -- dem -- pto -- ris Ma -- ter,
-  quæ per via cæ -- li -- or -- ta,
+  quæ per -- via cæ -- li  por -- ta,
   por -- ta ma -- nes, et stel -- la ma -- ris,
-  quæ per via cæ -- li -- or -- ta,
+  quæ per via cæ -- li por -- ta,
   por -- ta ma -- nes,
   et stel -- la ma -- ris.
   Al -- ma Re -- dem -- pto -- ris Ma -- ter,
@@ -237,14 +237,14 @@ altTextAlmaLegrenzi = \lyricmode {
   na -- tu -- ra mi -- ran -- te, 
   tu -- um sanc -- tum, tu -- um sanc -- tum 
   Ge -- ni -- to -- rem, 
-  vir -- go pri -- us ac pos -- te -- ri -- us,
+  vir -- go pri -- us ac po -- ste -- ri -- us,
   Ga -- bri -- e -- lis ab o -- re 
   su -- mens il -- lud a -- ve, 
   pec -- ca -- to -- rum mi -- se -- re -- re, 
   mi -- se -- re -- re, 
   pec -- ca -- to -- rum mi -- se -- re -- re, 
   vir -- go pri -- us ac pos -- te -- ri -- us, 
-  ac pos -- te -- ri -- us, 
+  ac po -- ste -- ri -- us, 
   Ga -- bri -- e -- lis ab o -- re 
   su -- mens il -- lud a -- ve, 
   pec -- ca -- to -- rum mi -- se -- re -- re, 
@@ -420,7 +420,7 @@ metronomZeileAlmaLegrenzi = \drummode {
 }
 \include "defAlmaLegrenzi.ly"
 
-%{Arbeitspartitur
+%***Arbeitspartitur
 #(set-global-staff-size 16)
 \book {
   \bookOutputName "AlmaLegrenzi-Arbeitspartitur"
@@ -458,4 +458,4 @@ metronomZeileAlmaLegrenzi = \drummode {
     \scoreAlmaLegrenzi
   }
 }
-Arbeitspartitur%}
+%Arbeitspartitur***
