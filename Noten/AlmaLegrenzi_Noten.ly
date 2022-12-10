@@ -155,7 +155,7 @@ altNotenAlmaLegrenzi = \tempTranspose \relative a' {
   d2 r2 | % 6
   r2 r4 r8 a8 | % 7
   d8. d16 c8. b16 c8 a8 c8 d8 | % 8
-  e4 e4 r4 r8 b8 \mBreak | % 9
+  e4 e4 r4 r8 a,8 \mBreak | % 9
   gis8([ a16 b16 ] c16 [ d16 c16 b16 ] a8 [ b16 c16 ] d8 [ c16 d16 ] |
   \barNumberCheck #10
   b8) a8 a8 [ gis8 ] a2 | % 11
@@ -331,7 +331,7 @@ bezifferungAlmaLegrenzi = \figuremode {
   s2 <6 5>4 <[_+]> |
   s2 <7>4 <[6 4]>8. <[_+]>16 |
   s4 s <[_+]> <6> |
-  s4 <[6 4]>8. <[_+]>16 s4 s |
+  s4 <[6 4]>8. <[_+]>16 s4 s8 <[6]> |
   <[_+]>4 <[6]> s4 s |
   <_+>4 <[6]> s4 s |
   s <4>8 <_+> s4 s |
@@ -392,7 +392,7 @@ bezifferungAlmaLegrenzi = \figuremode {
 
 orgelRHNotenAlmaLegrenzi = \tempTranspose \relative c' {
   \globalAlmaLegrenzi
-
+  s1*63
 }
 
 orgelLHNotenAlmaLegrenzi = \tempTranspose \relative c {
